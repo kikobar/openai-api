@@ -8,6 +8,9 @@ def create_model_response(conversation,model,message):
 
     payload = json.dumps({
       "model": model,
+      "tools": [
+      {"type": "web_search"},
+      ],
       "input": message,
       "conversation": conversation
     })
