@@ -5,7 +5,7 @@ import sys
 
 def update_conversation(conversation,metadata):
     url = base_url+"conversations/"+conversation
-    print(metadata)
+
     payload = json.dumps({
       "metadata": json.loads(metadata)
     })
