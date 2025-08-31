@@ -10,6 +10,7 @@ def create_model_response(conversation,model,message):
       "model": model,
       "tools": [
       {"type": "web_search"},
+      {"type": "file_search", "vector_store_ids" :[vector_store]}
       ],
       "input": message,
       "conversation": conversation
