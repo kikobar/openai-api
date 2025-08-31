@@ -42,6 +42,7 @@ You can manipulate the main abstractions of the OpenAI model:
   | `list_items.py`                         | `conversation_id` |                 |                 | List all Items (inputs or Responses) in a Conversation   |
   | `list_vector_store_files.py`            | `vector_store_id` |                 |                 | List all Files in a Vector Store                         |
   | `list_vector_stores.py`                 |                   |                 |                 | List all Vector Stores                                   |
+  | `modify_vector_store.py`                | `vector_store_id` | `metadata`      |                 | Update a Vector Store metadata                           |
   | `retrieve_conversation.py`              | `conversation_id` |                 |                 | Retrieve a Conversation                                  |
   | `retrieve_file.py`                      | `file_id`         |                 |                 | Retrieve a File                                          |
   | `retrieve_file_content.py`              | `file_id`         |                 |                 | Retrieve the content of File                             |
@@ -51,6 +52,7 @@ You can manipulate the main abstractions of the OpenAI model:
   | `retrieve_vector_store_file.py`         | `vector_store_id` | `file_id`       |                 | Retrieve a File from a Vector Store                      |
   | `retrieve_vector_store_file_content.py` | `vector_store_id` | `file_id`       |                 | Retrieve the content of a File from a Vector Store       |
   | `update_conversation.py`                | `conversation_id` | `metadata`      |                 | Update a Conversation metadata                           |
+  | `update_vector_store_file.py`           | `vector_store_id` | `file_id`       | `attributes`    | Update a File attributes                                 |
   | `upload_file.py`                        | `filename`        | `path-to-file`  |                 | Upload a File to the OpenAI platform                     |
 
 * To execute these scripts run `python3 <script.py> <parameter_1> ...`.
