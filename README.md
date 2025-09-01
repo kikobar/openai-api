@@ -27,6 +27,7 @@ You can manipulate the main abstractions of the OpenAI model:
   | --------------------------------------- | ----------------- | --------------- | --------------- | -------------------------------------------------------- |
   | `cancel_model_response.py`              | `response_id`     |                 |                 | Cancel a Response running in the background              |
   | `create_conversation.py`                |                   |                 |                 | Create a new Conversation                                |
+  | `create_image.py`                       | `model_id`        | `prompt`        |                 | Create an image based on the prompt description          |
   | `create_model_response.py`              | `conversation_id` | `model_id`      | `input_message` | Create a Response within a Conversation                  |
   | `create_text_item.py`                   | `conversation_id` | `input_message` |                 | Create a user input or instruction within a Conversation |
   | `create_vector_store.py`                |                   |                 |                 | Create a Vector Store                                    |
