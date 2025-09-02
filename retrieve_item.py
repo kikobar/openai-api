@@ -13,6 +13,7 @@ def retrieve_item(conversation,message):
     response = requests.request("GET", url, headers=headers, data=payload)
 
     print(response.text)
+    print(response.json()["content"][0]["text"])
 
 
 if __name__ == '__main__':
