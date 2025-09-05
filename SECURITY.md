@@ -4,6 +4,7 @@
 
 | Version | Supported          |
 | ------- | ------------------ |
+| 0.5.x   | :heavy_check_mark: |
 | 0.4.x   | :heavy_check_mark: |
 | 0.3.x   | :heavy_check_mark: |
 | 0.2.x   | :heavy_check_mark: |
