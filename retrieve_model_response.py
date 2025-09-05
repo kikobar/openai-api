@@ -13,6 +13,7 @@ def retrieve_model_response(response):
     response = requests.request("GET", url, headers=headers, data=payload)
 
     print(response.text)
+    print(response.json()["output"][-1]["content"][0]["text"])
 
 if __name__ == '__main__':
     retrieve_model_response(str(sys.argv[1]))

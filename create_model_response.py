@@ -23,5 +23,7 @@ def create_model_response(conversation,model,message):
     response = requests.request("POST", url, headers=headers, data=payload)
 
     print(response.text)
+    print(response.json()["output"][-1]["content"][0]["text"])
+
 if __name__ == '__main__':
     create_model_response(str(sys.argv[1]),str(sys.argv[2]),str(sys.argv[3]))
